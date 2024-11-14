@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 200vh;
+        width: 100vh;
+        background-color: darkolivegreen;
+      }
+      .images {
+        object-fit: scale-down;
+      }
+      h2 {
+        position: fixed;
+        bottom: 10px;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>responsive picture</h2>
+    <picture>
+      <source
+        class="images"
+        media="(min-width:650px)"
+        srcset="src/images/coffe.jpg"
+      />
+      <source
+        class="images"
+        media="(min-width:450px)"
+        srcset="src/images/onlineShoplogo.jpg"
+      />
+
+      <img src="" alt="" width="100%" height="200" />
+    </picture>
+    <p>صفحه ی براوزر را تغییر دهید</p>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>sample for iframe</title>
+    <style>
+      body {
+        width: 400vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        background-color: lightpink;
+      }
+      .myiframe {
+        border-color: brown;
+        border-width: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      class="myiframe"
+      src="https://offlandorg.com/"
+      name="iframe-a"
+      height="600"
+      width="600"
+      frameborder="0"
+      title="iframe for index"></iframe>
+      <a href="https://offlandorg.com/" target="iframe-a"></a>
+    ></iframe>
+  </body>
+</html>
