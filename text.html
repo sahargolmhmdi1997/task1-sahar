@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>text styles</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      p:nth-child(2) {
+        color: crimson;
+        text-decoration: underline;
+        letter-spacing: 3px;
+        font-weight: bolder;
+      }
+      /* body > p {
+        color: blue;
+      } */
+      /* p:last-child {
+        color: green;
+      } */
+      p:last-of-type {
+        color: darkmagenta;
+      }
+      p:first-child {
+        color: greenyellow;
+        text-decoration: overline;
+        letter-spacing: 10px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      div {
+        width:200px;
+        border: 1px solid black;
+        height: 300px;
+      }
+      div.a {
+        word-wrap: normal;
+      }
+      div.b {
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <p>this is my sample text which i want to explain</p>
+    <p>این یک متن نمونه فارسی است متن نمونه</p>
+    <p>این متن اخر است متن نمونه ی اخر</p>
+
+    <h1>word-wrap property</h1>
+    <h2>word-wrap:normal</h2>
+    <div class="a">
+      t
+      div contains a long word:vh,vgcvdgfhckgchxh b hvdfcghvjhvjjdhuiuid
+      hsugugsgyugygdyugdiguiogsuishg hkcjdtyuftiuvnvmbvbvmvvvvvvvvvkvvyufthis
+      div contains a long word:vh,vgcvdgfhckgchxh b hvdfcghvjhvjjdhuiuid
+      hsugugsgyugygdyugdiguiogsuishg hkcjdtyuftiuvnvmbvbvmvvvvvvvvvkvvyuf
+    </div>
+    <h2>word-wrap: break-word</h2>
+    <div class="b">
+      
+      div contains a long word:vh,vgcvdgfhckgchxh b hvdfcghvjhvjjdhuiuid
+      hsugugsgyugygdyugdiguiogsuishg hkcjdtyuftiuvnvmbvbvmvvvvvvvvvkvvyufthis
+      div contains a long word:vh,vgcvdgfhckgchxh b hvdfcghvjhvjjdhuiuid
+      hsugugsgyugygdyugdiguiogsuishg hkcjdtyuftiuvnvmbvbvmvvvvvvvvvkvvyuf
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive web page</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+        direction: rtl;
+        overflow-x: hidden;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        padding-inline: 30px;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2%;
+      }
+      #hamburger {
+        display: flex;
+      }
+      @media (max-width: 600px) {
+        #logo {
+          display: none;
+        }
+      }
+      ul {
+        display: flex;
+      }
+      #hamburger {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        id="hamburger"
+        src="/src/images/svg/menu-icon.svg"
+        alt="humburgerMenu"
+        width="30px"
+        height="50px"
+      />
+      <ul>
+        <li><a href="#">لینک1</a></li>
+        <li><a href="#">لینک2</a></li>
+        <li><a href="#">لینک3</a></li>
+        <li><a href="#">لینک4</a></li>
+        <li><a href="#">لینک5</a></li>
+        <li><a href="#">لینک6</a></li>
+        <li><a href="#">لینک7</a></li>
+      </ul>
+      <img
+        id="logo"
+        src="/src/images/svg/003.svg"
+        alt="cat"
+        width="300"
+        height="300"
+      />
+    </header>
+  </body>
+</html>

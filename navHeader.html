@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav header</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 300vw;
+        height: 300vh;
+        background-color: lightpink;
+      }
+      ul {
+        list-style: decimal;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      #sampleProudct {
+        width: 100%;
+        height: 5%;
+        background-color: aquamarine;
+        margin-top: 10px;
+      }
+      #contactUs {
+        width: 100%;
+        height: 5%;
+        background-color: darkolivegreen;
+        margin-top: 20px;
+      }
+      #myfooter {
+        width: 100vw;
+        height: 20vh;
+        background-color: crimson;
+        margin-top: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav> 
+        <a href="">محصولات نمونه</a>
+        <a href="">ارتباط با ما</a>
+        <a href="">ویدیوی نمونه</a>
+        <a href="">ادرس شرکت</a>
+    </nav> -->
+
+    <ul>
+      <li><a href="#sampleProudct"> محصول نمونه</a></li>
+      <li><a href="#contactUs"> ارتباط باما</a></li>
+      <li><a href="#myimg">عکس نمونه</a></li>
+      <li><a href="#myfooter">ادرس سایت</a></li>
+    </ul>
+    <section id="sampleProudct">
+      <h1>محصول نمونه</h1>
+    </section>
+    <section id="contactUs">
+      <h1>محصول نمونه</h1>
+    </section>
+    <img
+      id="myimg"
+      src="/src/images/coffe.jpg"
+      alt="coffe"
+      width="400"
+      height="400"
+    />
+    <footer id="myfooter">
+      <address>
+        <br />
+        ادرس خیابان دانشکده کوی 35
+      </address>
+    </footer>
+  </body>
+</html>
